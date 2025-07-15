@@ -548,7 +548,7 @@ class BBox3DEstimator:
         if 'depth_value' in box_3d:
             depth_value = box_3d['depth_value']
             depth_method = box_3d.get('depth_method', 'unknown')
-            depth_text = f"D:{depth_value:.2f} ({depth_method})"
+            depth_text = f"Depth: {depth_value:.2f} ({depth_method})"
             cv2.putText(image, depth_text, (x1, text_y), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
             text_y -= 15
@@ -556,7 +556,7 @@ class BBox3DEstimator:
         # Get score if available
         if 'score' in box_3d:
             score = box_3d['score']
-            score_text = f"S:{score:.2f}"
+            score_text = f"Score: {score:.2f}"
             cv2.putText(image, score_text, (x1, text_y), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
         
