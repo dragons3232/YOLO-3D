@@ -289,7 +289,7 @@ def main():
                 depth_height = height // 4
                 depth_width = depth_height * width // height
                 depth_resized = cv2.resize(depth_colored, (depth_width, depth_height))
-                result_frame[0:depth_height, 0:depth_width] = depth_resized
+                # result_frame[0:depth_height, 0:depth_width] = depth_resized
             except Exception as e:
                 print(f"Error adding depth map to result: {e}")
             
