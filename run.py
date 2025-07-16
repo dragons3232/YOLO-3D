@@ -40,7 +40,7 @@ def main():
     
     # Feature toggles
     enable_tracking = True  # Enable object tracking
-    enable_bev = True  # Enable Bird's Eye View visualization
+    enable_bev = False  # Enable Bird's Eye View visualization
     enable_pseudo_3d = True  # Enable pseudo-3D visualization
     
     # Camera parameters - simplified approach
