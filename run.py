@@ -299,7 +299,7 @@ def main():
             # Display frames
             cv2.imshow("3D Object Detection", result_frame)
             cv2.imshow("Depth Map", depth_colored)
-            cv2.imshow("Object Detection", detection_frame)
+            # cv2.imshow("Object Detection", detection_frame)
             
             # Check for key press again at the end of the loop
             key = cv2.waitKey(1)
