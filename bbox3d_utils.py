@@ -534,7 +534,7 @@ class BBox3DEstimator:
         obj_id = box_3d['object_id'] if 'object_id' in box_3d else None
         
         # Draw text information
-        text_y = y1 - 10
+        text_y = y1 - 25
         if obj_id is not None:
             cv2.putText(image, f"ID:{obj_id}", (x1, text_y), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
