@@ -559,6 +559,12 @@ class BBox3DEstimator:
             score_text = f"Score: {score:.2f}"
             cv2.putText(image, score_text, (x1, text_y), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+        text_y -= 15
+
+        imgHeight, imgWidth, _ = image.shape
+        depth_text = f"WxH: {width} x {height}, norm: {width/imgWidth:.3f} x {height/imgHeight:.3f}"
+        cv2.putText(image, depth_text, (x1, text_y), 
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
         
         # Draw a vertical line from the bottom of the box to the ground
         # This helps with depth perception
